@@ -1,0 +1,2 @@
+# node-localbitcoins
+ LocalBitcoins API
