@@ -1,0 +1,40 @@
+const Response = require('./Response')
+const RefreshToken = require('./RefreshToken')
+const User = require('./User')
+const Advertisement = require('./Advertisement')
+const PaymentDetails = require('./PaymentDetails')
+const Trade = require('./Trade')
+const Message = require('./Message')
+const Attachment = require('./Attachment')
+const Notification = require('./Notification')
+const RealNameVerification = require('./RealNameVerification')
+const OldWalletAddress = require('./OldWalletAddress')
+const Transaction = require('./Transaction')
+const WalletInfo = require('./WalletInfo')
+const InputFile = require('./InputFile')
+const PaymentMethod = require('./PaymentMethod')
+const Currency = require('./Currency')
+const Fees = require('./Fees')
+const OrderBook = require('./OrderBook')
+
+class Types {}
+Types.Response = Response
+Types.RefreshToken = RefreshToken
+Types.User = User
+Types.Advertisement = Advertisement
+Types.PaymentDetails = PaymentDetails
+Types.Trade = Trade
+Types.Message = Message
+Types.Attachment = Attachment
+Types.Notification = Notification
+Types.RealNameVerification = RealNameVerification
+Types.OldWalletAddress = OldWalletAddress
+Types.Transaction = Transaction
+Types.WalletInfo = WalletInfo
+Types.InputFile = InputFile
+Types.PaymentMethod = PaymentMethod
+Types.Currency = Currency
+Types.Fees = Fees
+Types.OrderBook = OrderBook
+
+module.exports = Types

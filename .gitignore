@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# ECMAScript dependency directories
+mjs/node_modules
+
+# CommonJS dependency directories
+cjs/node_modules
