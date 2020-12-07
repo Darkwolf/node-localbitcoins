@@ -27,7 +27,7 @@ const localbitcoins = new LocalBitcoins({
 // OAuth2 client
 // Client ID, Client Secret, and Refresh Token are required for auto refresh
 const client = new LocalBitcoins({
-  oauth: {
+  oauth2: {
     clientId,
     clientSecret,
     accessToken,
