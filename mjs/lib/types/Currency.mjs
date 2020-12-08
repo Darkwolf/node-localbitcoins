@@ -7,9 +7,9 @@ export default class Currency {
       name: params.name,
       altcoin: params.altcoin,
       btcVolume: params.volume_btc,
-      avg6h: params.avg_6h,
-      avg12h: params.avg_12h,
-      avg24h: params.avg_24h
+      averageRate6h: params.avg_6h,
+      averageRate12h: params.avg_12h,
+      averageRate24h: params.avg_24h
     }
     if (params.rates) {
       data.lastRate = params.rates.last
@@ -20,14 +20,14 @@ export default class Currency {
     if (data.lastRate) {
       data.lastRate = parseFloat(data.lastRate)
     }
-    if (data.avg6h) {
-      data.avg6h = parseFloat(data.avg6h)
+    if (data.averageRate6h) {
+      data.averageRate6h = parseFloat(data.averageRate6h)
     }
-    if (data.avg12h) {
-      data.avg12h = parseFloat(data.avg12h)
+    if (data.averageRate12h) {
+      data.averageRate12h = parseFloat(data.averageRate12h)
     }
-    if (data.avg24h) {
-      data.avg24h = parseFloat(data.avg24h)
+    if (data.averageRate24h) {
+      data.averageRate24h = parseFloat(data.averageRate24h)
     }
     return new Currency(data)
   }
@@ -43,9 +43,9 @@ export default class Currency {
       .setAltcoin(data.altcoin)
       .setBtcVolume(data.btcVolume)
       .setLastRate(data.lastRate)
-      .setAvg6h(data.avg6h)
-      .setAvg12h(data.avg12h)
-      .setAvg24h(data.avg24h)
+      .setAverageRate6h(data.averageRate6h)
+      .setAverageRate12h(data.averageRate12h)
+      .setAverageRate24h(data.averageRate24h)
   }
 
   setCode(code) {
@@ -73,18 +73,18 @@ export default class Currency {
     return this
   }
 
-  setAvg6h(amount) {
-    this.avg6h = amount
+  setAverageRate6h(amount) {
+    this.averageRate6h = amount
     return this
   }
 
-  setAvg12h(amount) {
-    this.avg12h = amount
+  setAverageRate12h(amount) {
+    this.averageRate12h = amount
     return this
   }
 
-  setAvg24h(amount) {
-    this.avg24h = amount
+  setAverageRate24h(amount) {
+    this.averageRate24h = amount
     return this
   }
 
@@ -105,14 +105,14 @@ export default class Currency {
     if (Helper.exists(this.lastRate)) {
       data.lastRate = this.lastRate
     }
-    if (Helper.exists(this.avg6h)) {
-      data.avg6h = this.avg6h
+    if (Helper.exists(this.averageRate6h)) {
+      data.averageRate6h = this.averageRate6h
     }
-    if (Helper.exists(this.avg12h)) {
-      data.avg12h = this.avg12h
+    if (Helper.exists(this.averageRate12h)) {
+      data.averageRate12h = this.averageRate12h
     }
-    if (Helper.exists(this.avg24h)) {
-      data.avg24h = this.avg24h
+    if (Helper.exists(this.averageRate24h)) {
+      data.averageRate24h = this.averageRate24h
     }
     return data
   }

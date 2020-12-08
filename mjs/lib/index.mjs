@@ -186,7 +186,7 @@ export {
 export default class LocalBitcoins extends EventEmitter {
   static URL = 'https://localbitcoins.com'
   static settings = {
-    ignoreErrors: true,
+    ignoreErrors: false,
     autoRefreshToken: true
   }
   static types = types

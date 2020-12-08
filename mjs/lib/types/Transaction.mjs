@@ -62,6 +62,26 @@ export default class Transaction {
       .setDate(data.date)
   }
 
+  get isSend() {
+    return this.type === TransactionType.SEND
+  }
+
+  get isPendingSend() {
+    return this.type === TransactionType.PENDING_SEND
+  }
+
+  get isOther() {
+    return this.type === TransactionType.OTHER
+  }
+
+  get isBitcoinNetworkFee() {
+    return this.type === TransactionType.BITCOIN_NETWORK_FEE
+  }
+
+  get isInternalSend() {
+    return this.type === TransactionType.INTERNAL_SEND
+  }
+
   setContext(context = {}) {
     this.context = context
     return this

@@ -629,7 +629,7 @@ class LocalBitcoins extends EventEmitter {
 }
 LocalBitcoins.URL = 'https://localbitcoins.com'
 LocalBitcoins.settings = {
-  ignoreErrors: true,
+  ignoreErrors: false,
   autoRefreshToken: true
 }
 LocalBitcoins.types = types
