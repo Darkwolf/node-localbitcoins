@@ -160,10 +160,6 @@ class LocalBitcoins extends EventEmitter {
               response
                 .setErrorCode(res.data.error.error_code)
                 .setMessage(res.data.error.message)
-              switch (response.errorCode) {
-                case 2:
-                case 41: throw new errors.UnauthorizedError(response.message).setResponse(response)
-              }
             }
           } else {
             response
@@ -171,6 +167,10 @@ class LocalBitcoins extends EventEmitter {
               .setResult(res.data)
           }
         } catch (e) {}
+        switch (response.errorCode) {
+          case 2:
+          case 41: throw new errors.UnauthorizedError(response.message).setResponse(response)
+        }
       }
       return response
     } catch (e) {

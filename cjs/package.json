@@ -1,6 +1,6 @@
 {
   "name": "@darkwolf/localbitcoins.cjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "LocalBitcoins API",
   "main": "./lib/index.js",
   "engines": {
