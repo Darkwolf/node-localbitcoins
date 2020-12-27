@@ -1,6 +1,6 @@
 {
   "name": "@darkwolf/localbitcoins.mjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LocalBitcoins API",
   "type": "module",
   "exports": {

@@ -1,6 +1,6 @@
 import { OrderBook } from '../types/index.mjs'
 import { UnknownError } from '../errors/index.mjs'
-import { EventType, TradeType } from '../constants/index.mjs'
+import { EventType } from '../constants/index.mjs'
 
 export default class GetOrderBookRequest {
   static from(parameters, context) {

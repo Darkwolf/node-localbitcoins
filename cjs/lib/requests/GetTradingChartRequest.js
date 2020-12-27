@@ -1,6 +1,6 @@
 const { Trade } = require('../types')
 const { UnknownError } = require('../errors')
-const { EventType, TradeType } = require('../constants')
+const { EventType } = require('../constants')
 
 class GetTradingChartRequest {
   constructor(parameters = {}, context) {

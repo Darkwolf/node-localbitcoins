@@ -1,6 +1,6 @@
 const { OrderBook } = require('../types')
 const { UnknownError } = require('../errors')
-const { EventType, TradeType } = require('../constants')
+const { EventType } = require('../constants')
 
 class GetOrderBookRequest {
   constructor(parameters = {}, context) {

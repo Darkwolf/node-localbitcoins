@@ -1,6 +1,6 @@
 import { Trade } from '../types/index.mjs'
 import { UnknownError } from '../errors/index.mjs'
-import { EventType, TradeType } from '../constants/index.mjs'
+import { EventType } from '../constants/index.mjs'
 
 export default class GetTradingChartRequest {
   static from(parameters, context) {

@@ -71,9 +71,7 @@ export default class SendBtcWithPinRequest {
             break
           }
           default: {
-            if (!error) {
-              error = new UnknownError(response.description).setResponse(response)
-            }
+            error = new UnknownError(response.description).setResponse(response)
           }
         }
         this.context.localbitcoins.emit(EventType.ERROR, error)

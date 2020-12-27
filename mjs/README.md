@@ -4,6 +4,8 @@
 `npm i --save @darkwolf/localbitcoins.mjs`
 #### CommonJS (Node.js v10.x LTS or higher)
 `npm i --save @darkwolf/localbitcoins.cjs`
+#### Lazy Loading CommonJS (Node.js v10.x LTS or higher)
+`npm i --save @darkwolf/localbitcoins.lazy.cjs`
 ## Using
 ```javascript
 // ECMAScript
@@ -13,6 +15,8 @@ import LocalBitcoins, {
 
 // CommonJS
 const LocalBitcoins = require('@darkwolf/localbitcoins.cjs')
+// Lazy Loading CommonJS
+const LocalBitcoins = require('@darkwolf/localbitcoins.lazy.cjs')
 const {
   InputFile
 } = LocalBitcoins

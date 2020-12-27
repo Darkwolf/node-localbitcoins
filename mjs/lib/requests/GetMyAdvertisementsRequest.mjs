@@ -1,7 +1,7 @@
 import Helper from '@darkwolf/helper.mjs'
 import { Advertisement } from '../types/index.mjs'
 import { UnknownError } from '../errors/index.mjs'
-import { EventType, TradeType } from '../constants/index.mjs'
+import { EventType } from '../constants/index.mjs'
 
 export default class GetMyAdvertisementsRequest {
   static endpoint = '/api/ads/'

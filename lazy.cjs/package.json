@@ -1,0 +1,37 @@
+{
+  "name": "@darkwolf/localbitcoins.lazy.cjs",
+  "version": "1.0.0",
+  "description": "LocalBitcoins API",
+  "main": "./lib/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkwolf/node-localbitcoins.git"
+  },
+  "keywords": [
+    "darkwolf",
+    "dw",
+    "localbitcoins",
+    "lazy",
+    "cjs",
+    "api"
+  ],
+  "author": "Pavel Wolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Darkwolf/node-localbitcoins/issues"
+  },
+  "homepage": "https://github.com/Darkwolf/node-localbitcoins#readme",
+  "dependencies": {
+    "@darkwolf/custom-error.cjs": "^1.0.1",
+    "@darkwolf/helper.cjs": "^1.0.6",
+    "@darkwolf/time.cjs": "^1.0.4",
+    "form-data": "^3.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}

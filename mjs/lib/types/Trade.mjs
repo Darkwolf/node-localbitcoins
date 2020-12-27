@@ -134,28 +134,20 @@ export default class Trade {
       .setDate(data.date)
   }
 
-  get isBuy() {
-    return this.type === AdvertisementType.BUY
-  }
-
-  get isSell() {
-    return this.type === AdvertisementType.SELL
-  }
-
   get isLocalBuy() {
-    return this.tradeType === TradeType.LOCAL_BUY
+    return this.type === TradeType.LOCAL_BUY
   }
 
   get isLocalSell() {
-    return this.tradeType === TradeType.LOCAL_SELL
+    return this.type === TradeType.LOCAL_SELL
   }
 
   get isOnlineBuy() {
-    return this.tradeType === TradeType.ONLINE_BUY
+    return this.type === TradeType.ONLINE_BUY
   }
 
   get isOnlineSell() {
-    return this.tradeType === TradeType.ONLINE_SELL
+    return this.type === TradeType.ONLINE_SELL
   }
 
   get isLocal() {
@@ -164,6 +156,14 @@ export default class Trade {
 
   get isOnline() {
     return this.isOnlineBuy || this.isOnlineSell
+  }
+
+  get isBuy() {
+    return this.isLocalBuy || this.isOnlineBuy
+  }
+
+  get isSell() {
+    return this.isLocalSell || this.isOnlineSell
   }
 
   get isBuyer() {
